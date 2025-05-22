@@ -11,5 +11,6 @@ namespace Blackjack.Web.Models
         public GameResult? Result { get; set; }
         public decimal BetAmount { get; set; }
         public decimal Payout { get; set; }
+        public decimal SessionVinst { get; set; }
     }
 }

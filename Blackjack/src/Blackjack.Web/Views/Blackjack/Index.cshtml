@@ -1,4 +1,16 @@
 ﻿@model Blackjack.Web.Models.BlackjackViewModel
+@{
+    decimal vinst;
+    if (Model.Payout == 0 && Model.Result == Blackjack.Core.Models.GameResult.DealerWin)
+    {
+        vinst = -Model.BetAmount; // Förlorat hela insatsen!
+    }
+    else
+    {
+        vinst = Model.Payout - Model.BetAmount;
+    }
+    var vinstText = vinst > 0 ? $"+{vinst} kr" : vinst < 0 ? $"{vinst} kr" : "0 kr";
+}
 
 <h2>Blackjack</h2>
 <p>Välkommen till Blackjack-projektet!</p>
@@ -7,7 +19,7 @@
 {
     <form asp-action="Deal" method="post">
         <label for="bet">Insats:</label>
-        <input type="number" name="bet" min="1" value="10" step="1" />
+        <input type="number" name="bet" min="1" value="@Model.BetAmount" step="1" />
         <button type="submit">Dela ut kort</button>
     </form>
 }
@@ -17,7 +29,16 @@ else
     <ul>
         @foreach (var card in Model.PlayerHand)
         {
-            <li>@($"{card.Rank} av {card.Suit}")</li>
+            <li>
+                @{
+                    string rankText = card.Rank == 1 ? "Ess"
+                    : card.Rank == 11 ? "Knekt"
+                    : card.Rank == 12 ? "Dam"
+                    : card.Rank == 13 ? "Kung"
+                    : card.Rank.ToString();
+                }
+                @($"{rankText} av {card.Suit}")
+            </li>
         }
     </ul>
 
@@ -49,8 +70,17 @@ else
         <ul>
             @foreach (var card in Model.DealerHand)
             {
-                <li>@($"{card.Rank} av {card.Suit}")</li>
+                string rankText = card.Rank switch
+                {
+                    1 => "Ess",
+                    11 => "Knekt",
+                    12 => "Dam",
+                    13 => "Kung",
+                    _ => card.Rank.ToString()
+                };
+                <li>@(rankText + " av " + card.Suit)</li>
             }
+
         </ul>
         <h4>
             Resultat:
@@ -58,7 +88,7 @@ else
             {
                 <span>Du vann!</span>
             }
-            else if (Model.Result == Blackjack.Core.Models.GameResult.DealerWin)
+            else if (Model.Result == Blackjack.Core.Models.GameResult.DealerWin && Model.Payout == 0)
             {
                 <span>Dealern vann.</span>
             }
@@ -68,6 +98,8 @@ else
             }
         </h4>
         <h4>Utbetalning: @Model.Payout kr</h4>
+        <h4>Din vinst/förlust för handen: @vinstText</h4>
+        <h4>Totalt resultat under sessionen: @(Model.SessionVinst > 0 ? "+" : "")@Model.SessionVinst kr</h4>
         <a asp-action="Index">Spela igen</a>
     }
 }

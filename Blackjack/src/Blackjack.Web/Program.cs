@@ -9,12 +9,15 @@ builder.Services.AddRazorPages();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddSession();
+
 // Register application services
 builder.Services.AddSingleton<IRandomProvider, SystemRandomProvider>();
 builder.Services.AddSingleton<IDeckService, DeckService>();
 builder.Services.AddSingleton<IHandService, HandService>();
 builder.Services.AddSingleton<IGameService, GameService>();
 builder.Services.AddSingleton<IBettingService, BettingService>();
+builder.Services.AddSingleton<IHandService, HandService>();
 
 var app = builder.Build();
 
@@ -24,6 +27,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
 }
 app.UseStaticFiles();
+app.UseSession();
 app.UseRouting();
 
 app.MapControllerRoute(
