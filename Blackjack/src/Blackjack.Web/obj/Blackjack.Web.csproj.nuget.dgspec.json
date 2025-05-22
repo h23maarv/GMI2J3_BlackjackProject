@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Web/Blackjack.Web.csproj": {}
+    "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Blackjack.Web.csproj": {}
   },
   "projects": {
-    "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/Blackjack.Core.csproj": {
+    "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/Blackjack.Core.csproj",
+        "projectUniqueName": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
         "projectName": "Blackjack.Core",
-        "projectPath": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/Blackjack.Core.csproj",
-        "packagesPath": "/Users/williamekbladh/.nuget/packages/",
-        "outputPath": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/",
+        "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
+        "packagesPath": "C:\\Users\\Klassisk\\.nuget\\packages\\",
+        "outputPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/williamekbladh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Klassisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -59,34 +66,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/williamekbladh/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Web/Blackjack.Web.csproj": {
+    "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Blackjack.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Web/Blackjack.Web.csproj",
+        "projectUniqueName": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Blackjack.Web.csproj",
         "projectName": "Blackjack.Web",
-        "projectPath": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Web/Blackjack.Web.csproj",
-        "packagesPath": "/Users/williamekbladh/.nuget/packages/",
-        "outputPath": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Web/obj/",
+        "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Blackjack.Web.csproj",
+        "packagesPath": "C:\\Users\\Klassisk\\.nuget\\packages\\",
+        "outputPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/williamekbladh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Klassisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/Blackjack.Core.csproj": {
-                "projectPath": "/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/Blackjack.Core.csproj"
+              "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
+                "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj"
               }
             }
           }
@@ -101,7 +115,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -125,7 +139,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/williamekbladh/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

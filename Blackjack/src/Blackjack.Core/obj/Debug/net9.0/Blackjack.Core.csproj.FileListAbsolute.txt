@@ -18,3 +18,13 @@ C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProj
 /Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/refint/Blackjack.Core.dll
 /Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.pdb
 /Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/ref/Blackjack.Core.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.deps.json
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.pdb
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.csproj.CoreCompileInputs.cache
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.sourcelink.json
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\refint\Blackjack.Core.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.pdb
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\ref\Blackjack.Core.dll

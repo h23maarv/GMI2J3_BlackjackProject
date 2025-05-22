@@ -64,6 +64,16 @@ namespace Blackjack.Core.Services
 
     public class HandService : IHandService
     {
+        private readonly IRandomProvider _random;
+        public HandService(IRandomProvider random)
+        {
+            _random = random;
+        }
+        public int GetRandomCardValue()
+        {
+            return _random.Next(1, 14);
+        }
+        
         public int CalculateValue(IEnumerable<Card> hand)
         {
             int total = hand.Sum(c => c.Rank > 10 ? 10 : c.Rank);
