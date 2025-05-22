@@ -1,0 +1,9 @@
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Web.exe
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\appsettings.json
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Web.dll
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Web.deps.json
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Web.runtimeconfig.json
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Web.pdb
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Core.dll
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Release\net9.0\PubTmp\Out\Blackjack.Core.pdb
