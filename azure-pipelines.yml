@@ -38,6 +38,6 @@ steps:
 # 5️⃣ Publicera till Azure App Service
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<din-azure-prenumeration>'
-    appName: 'my-razor-app'
+    azureSubscription: 'webApp'
+    appName: 'BlackJack'
     package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
