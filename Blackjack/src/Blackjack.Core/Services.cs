@@ -30,6 +30,16 @@ namespace Blackjack.Core.Services
         {
             _random = random;
         }
+        
+        public Card DrawCard(IList<Card> deck)
+        {
+            if (deck.Count == 0)
+                throw new InvalidOperationException("Cannot draw from an empty deck");
+        
+            var card = deck[0];
+            deck.RemoveAt(0);
+            return card;
+        }
 
         public IList<Card> CreateDeck()
         {

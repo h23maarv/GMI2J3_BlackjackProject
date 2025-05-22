@@ -1,10 +1,20 @@
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.deps.json
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.dll
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.pdb
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.csproj.CoreCompileInputs.cache
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.sourcelink.json
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.dll
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\refint\Blackjack.Core.dll
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.pdb
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\ref\Blackjack.Core.dll
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/bin/Debug/net9.0/Blackjack.Core.deps.json
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/bin/Debug/net9.0/Blackjack.Core.dll
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/bin/Debug/net9.0/Blackjack.Core.pdb
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.csproj.CoreCompileInputs.cache
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.sourcelink.json
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.dll
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/refint/Blackjack.Core.dll
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.pdb
+C:/Users/Mattr/Skola/Årskurs 2/GMI2J3 - Software Testing 1/Github/BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/ref/Blackjack.Core.dll
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/bin/Debug/net9.0/Blackjack.Core.deps.json
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/bin/Debug/net9.0/Blackjack.Core.dll
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/bin/Debug/net9.0/Blackjack.Core.pdb
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.csproj.CoreCompileInputs.cache
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.sourcelink.json
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.dll
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/refint/Blackjack.Core.dll
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/Blackjack.Core.pdb
+/Users/williamekbladh/Documents/Skola/GMI24H/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Core/obj/Debug/net9.0/ref/Blackjack.Core.dll
