@@ -13,7 +13,13 @@ namespace Blackjack.Tests
     public class GameServiceTests
     {
         // Hjälpmetod för en riktig handservice (integration)
-        private IHandService CreateRealHandService() => new HandService();
+        private IHandService CreateRealHandService()
+        {
+            var randomMock = new Mock<IRandomProvider>();
+            randomMock.Setup(r => r.Next(It.IsAny<int>(), It.IsAny<int>())).Returns<int, int>((min, max) => min);
+            randomMock.Setup(r => r.Shuffle(It.IsAny<IList<Card>>())).Callback<IList<Card>>(l => { });
+            return new HandService(randomMock.Object);
+        }
 
         [Fact]
         public void DealInitialHands_GivesTwoCardsToPlayerAndDealer()
