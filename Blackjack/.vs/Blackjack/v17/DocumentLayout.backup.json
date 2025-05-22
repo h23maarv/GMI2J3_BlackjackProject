@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.core\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|solutionrelative:src\\blackjack.core\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.core\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|solutionrelative:src\\blackjack.core\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.web\\views\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|solutionrelative:src\\blackjack.web\\views\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.web\\controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|solutionrelative:src\\blackjack.web\\controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.web\\models\\blackjackviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|solutionrelative:src\\blackjack.web\\models\\blackjackviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|solutionrelative:src\\blackjack.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.tests\\gameservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\gameservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.tests\\handservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\handservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.tests\\deckservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\deckservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.tests\\handservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\handservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.tests\\gameservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\gameservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.core\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|solutionrelative:src\\blackjack.core\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.web\\blackjack.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|solutionrelative:src\\blackjack.web\\blackjack.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|c:\\users\\mattr\\skola\\\u00E5rskurs 2\\gmi2j3 - software testing 1\\github\\blackjackproject\\blackjack\\src\\blackjack.web\\models\\blackjackviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72FB120A-2170-4690-9A3E-7E948274676E}|src\\Blackjack.Web\\Blackjack.Web.csproj|solutionrelative:src\\blackjack.web\\models\\blackjackviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,32 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HandServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\HandServiceTests.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\HandServiceTests.cs",
+              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\HandServiceTests.cs",
+              "RelativeToolTip": "src\\Blackjack.Tests\\HandServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:39:48.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Views\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\Blackjack.Web\\Views\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Views\\Index.cshtml",
-              "RelativeToolTip": "src\\Blackjack.Web\\Views\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T12:30:11.085Z",
+              "Title": "GameServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\GameServiceTests.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\GameServiceTests.cs",
+              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\GameServiceTests.cs",
+              "RelativeToolTip": "src\\Blackjack.Tests\\GameServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:39:45.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeckServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\DeckServiceTests.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\DeckServiceTests.cs",
+              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\DeckServiceTests.cs",
+              "RelativeToolTip": "src\\Blackjack.Tests\\DeckServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:39:40.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BlackjackController.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Controllers\\BlackjackController.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Web\\Controllers\\BlackjackController.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Controllers\\BlackjackController.cs",
-              "RelativeToolTip": "src\\Blackjack.Web\\Controllers\\BlackjackController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:29:17.266Z",
+              "Title": "Blackjack.Web",
+              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Blackjack.Web.csproj",
+              "RelativeDocumentMoniker": "src\\Blackjack.Web\\Blackjack.Web.csproj",
+              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Blackjack.Web.csproj",
+              "RelativeToolTip": "src\\Blackjack.Web\\Blackjack.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T12:55:54.62Z",
               "EditorCaption": ""
             },
             {
@@ -86,22 +92,9 @@
               "RelativeDocumentMoniker": "src\\Blackjack.Web\\Models\\BlackjackViewModel.cs",
               "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Models\\BlackjackViewModel.cs",
               "RelativeToolTip": "src\\Blackjack.Web\\Models\\BlackjackViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:28:57.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Web\\Program.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Program.cs",
-              "RelativeToolTip": "src\\Blackjack.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:26:34.445Z",
+              "WhenOpened": "2025-05-07T12:44:33.205Z",
               "EditorCaption": ""
             },
             {
@@ -135,84 +128,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\GameServiceTests.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\GameServiceTests.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\GameServiceTests.cs",
-              "RelativeToolTip": "src\\Blackjack.Tests\\GameServiceTests.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:13:29.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HandServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\HandServiceTests.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\HandServiceTests.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\HandServiceTests.cs",
-              "RelativeToolTip": "src\\Blackjack.Tests\\HandServiceTests.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:56:21.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeckServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\DeckServiceTests.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\DeckServiceTests.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\DeckServiceTests.cs",
-              "RelativeToolTip": "src\\Blackjack.Tests\\DeckServiceTests.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:43:18.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Services.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Services.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Core\\Services.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Services.cs",
-              "RelativeToolTip": "src\\Blackjack.Core\\Services.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAkwFAAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:39:55.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Interfaces.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Interfaces.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Core\\Interfaces.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Interfaces.cs",
-              "RelativeToolTip": "src\\Blackjack.Core\\Interfaces.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswB4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:39:40.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Models.cs",
-              "DocumentMoniker": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Models.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Core\\Models.cs",
-              "ToolTip": "C:\\Users\\Mattr\\Skola\\\u00C5rskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Models.cs",
-              "RelativeToolTip": "src\\Blackjack.Core\\Models.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA5wAgAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:39:22.425Z",
-              "EditorCaption": ""
             }
           ]
         },
