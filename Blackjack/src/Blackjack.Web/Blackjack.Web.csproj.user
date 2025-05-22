@@ -2,5 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\Properties\PublishProfiles\BlackJack - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -97,6 +97,13 @@ namespace Blackjack.Core.Services
         private readonly IBettingService _bettingService;
         private IList<Card> _deck;
 
+        public bool IsGameOver { get; private set; }
+        public void Stand()
+        {
+            IsGameOver = true;
+            DealerPlay();
+        }
+
         // Nu matchar PlayerHand/DealerHand IList<Card>
         public IList<Card> PlayerHand { get; private set; }
         public IList<Card> DealerHand { get; private set; }
@@ -126,12 +133,21 @@ namespace Blackjack.Core.Services
 
         public void PlayerHit()
         {
-            var card = _deck[PlayerHand.Count + DealerHand.Count];
+            if (_deck == null || PlayerHand == null)
+                throw new InvalidOperationException("Spelet är inte initierat.");
+            if (_deck.Count == 0)
+                throw new InvalidOperationException("No more cards in the deck.");
+
+            var card = _deck[0];
             PlayerHand.Add(card);
+            _deck.RemoveAt(0);
         }
 
         public void DealerPlay()
         {
+            if (_deck == null || DealerHand == null || PlayerHand == null)
+                throw new InvalidOperationException("Spelet är inte initierat.");
+
             while (_handService.CalculateValue(DealerHand) < 17)
                 DealerHand.Add(_deck[PlayerHand.Count + DealerHand.Count]);
         }
@@ -140,6 +156,7 @@ namespace Blackjack.Core.Services
         {
             var playerTotal = _handService.CalculateValue(PlayerHand);
             var dealerTotal = _handService.CalculateValue(DealerHand);
+            System.Diagnostics.Debug.WriteLine($"Player: {playerTotal}, Dealer: {dealerTotal}");
 
             if (playerTotal > 21) return GameResult.DealerWin;
             if (dealerTotal > 21) return GameResult.PlayerWin;

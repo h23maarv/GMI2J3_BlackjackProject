@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="BlackJack" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Mattr\\Skola\\Årskurs\ 2\\GMI2J3\ -\ Software\ Testing\ 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack\.Web\\obj\\Release\\net9\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

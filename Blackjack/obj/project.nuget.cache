@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "s+7bC+jV2Zc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\Blackjack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mattr\\.nuget\\packages\\fluentassertions\\8.2.0\\fluentassertions.8.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
