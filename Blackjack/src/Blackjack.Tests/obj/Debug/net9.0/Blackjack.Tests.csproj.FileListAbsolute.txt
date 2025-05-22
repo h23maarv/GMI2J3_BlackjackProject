@@ -97,6 +97,7 @@ C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProj
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\Blackjack.Tests.AssemblyInfoInputs.cache
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\Blackjack.Tests.AssemblyInfo.cs
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\Blackjack.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\Blackjack.Tests.sourcelink.json
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\Blackjac.AE347413.Up2Date
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\Blackjack.Tests.dll
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\obj\Debug\net9.0\refint\Blackjack.Tests.dll

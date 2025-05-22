@@ -1,7 +1,0 @@
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.AssemblyInfoInputs.cache
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.AssemblyInfo.cs
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.csproj.CoreCompileInputs.cache
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.RazorAssemblyInfo.cache
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\obj\Debug\net9.0\Blackjack.RazorAssemblyInfo.cs

@@ -10,9 +10,7 @@ namespace Blackjack.Web.Controllers
         private readonly IGameService _gameService;
         private readonly IBettingService _bettingService;
 
-        public BlackjackController(
-            IGameService gameService,
-            IBettingService bettingService)
+        public BlackjackController(IGameService gameService, IBettingService bettingService)
         {
             _gameService = gameService;
             _bettingService = bettingService;
@@ -21,10 +19,11 @@ namespace Blackjack.Web.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            // Visar bara startsida med insats och Deal-knapp
             var model = new BlackjackViewModel
             {
-                PlayerHand = _gameService.PlayerHand,
-                DealerHand = new[] { _gameService.DealerHand.FirstOrDefault() },
+                PlayerHand = new List<Card>(),
+                DealerHand = new List<Card>(),
                 IsGameOver = false
             };
             return View(model);
@@ -35,18 +34,19 @@ namespace Blackjack.Web.Controllers
         {
             _bettingService.PlaceBet(bet);
             _gameService.DealInitialHands();
+            // Visa Play (inte Index) efter Deal!
             return RedirectToAction(nameof(Play));
         }
 
         [HttpGet]
         public IActionResult Play()
         {
+            // Pågående spel, visa Hit och Stand
             var model = new BlackjackViewModel
             {
-                PlayerHand = _gameService.PlayerHand,
-                DealerHand = new[] { _gameService.DealerHand.First() },
-                IsGameOver = false,
-                BetAmount = 0
+                PlayerHand = _gameService.PlayerHand ?? new List<Card>(),
+                DealerHand = _gameService.DealerHand?.Take(1).ToList() ?? new List<Card>(), // Bara första kortet
+                IsGameOver = false
             };
             return View("Index", model);
         }
@@ -55,6 +55,7 @@ namespace Blackjack.Web.Controllers
         public IActionResult Hit()
         {
             _gameService.PlayerHit();
+            // Visa Play (inte Index) efter Hit!
             return RedirectToAction(nameof(Play));
         }
 
@@ -67,8 +68,8 @@ namespace Blackjack.Web.Controllers
 
             var model = new BlackjackViewModel
             {
-                PlayerHand = _gameService.PlayerHand,
-                DealerHand = _gameService.DealerHand,
+                PlayerHand = _gameService.PlayerHand ?? new List<Card>(),
+                DealerHand = _gameService.DealerHand ?? new List<Card>(), // Visa ALLA kort nu
                 IsGameOver = true,
                 Result = result,
                 BetAmount = 0,

@@ -17,10 +17,10 @@ namespace Blackjack.Tests
             // Arrange
             var deck = new[]
             {
-                new Card(Suit.Hearts, 10),
-                new Card(Suit.Spades, 5),
-                new Card(Suit.Diamonds, 7),
-                new Card(Suit.Clubs, 2)
+                new Card(Suit.Hjärter, 10),
+                new Card(Suit.Spader, 5),
+                new Card(Suit.Ruter, 7),
+                new Card(Suit.Klöver, 2)
             }.ToList();
             var deckServiceMock = new Mock<IDeckService>();
             deckServiceMock.Setup(d => d.CreateDeck()).Returns(deck);

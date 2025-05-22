@@ -3,6 +3,7 @@ C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProj
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\bin\Debug\net9.0\Blackjack.Core.pdb
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.sourcelink.json
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.dll
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\refint\Blackjack.Core.dll
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Core\obj\Debug\net9.0\Blackjack.Core.pdb

@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Blackjack.Web.Models;
+using Blackjack.Core.Models;
 
 namespace Blackjack.Web.Controllers;
 
@@ -15,7 +16,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var model = new BlackjackViewModel
+        {
+            PlayerHand = new List<Card>(),
+            DealerHand = new List<Card>(),
+            IsGameOver = false,
+            Result = null,
+            BetAmount = 0,
+            Payout = 0
+        };
+        return View(model);
     }
 
     public IActionResult Privacy()

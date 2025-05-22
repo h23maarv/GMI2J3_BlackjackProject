@@ -1,0 +1,73 @@
+﻿@model Blackjack.Web.Models.BlackjackViewModel
+
+<h2>Blackjack</h2>
+<p>Välkommen till Blackjack-projektet!</p>
+
+@if (Model.PlayerHand == null || !Model.PlayerHand.Any())
+{
+    <form asp-action="Deal" method="post">
+        <label for="bet">Insats:</label>
+        <input type="number" name="bet" min="1" value="10" step="1" />
+        <button type="submit">Dela ut kort</button>
+    </form>
+}
+else
+{
+    <h3>Dina kort:</h3>
+    <ul>
+        @foreach (var card in Model.PlayerHand)
+        {
+            <li>@($"{card.Rank} av {card.Suit}")</li>
+        }
+    </ul>
+
+    @if (!Model.IsGameOver)
+    {
+        <h3>Dealerns första kort:</h3>
+        <ul>
+            <li>
+                @if (Model.DealerHand != null && Model.DealerHand.Any())
+                {
+                    @($"{Model.DealerHand.First().Rank} av {Model.DealerHand.First().Suit}")
+                }
+                else
+                {
+                    <text>Inga kort utdelade än.</text>
+                }
+            </li>
+        </ul>
+        <form asp-action="Hit" method="post">
+            <button type="submit">Ta kort (Hit)</button>
+        </form>
+        <form asp-action="Stand" method="post">
+            <button type="submit">Stanna (Stand)</button>
+        </form>
+    }
+    else
+    {
+        <h3>Dealerns kort:</h3>
+        <ul>
+            @foreach (var card in Model.DealerHand)
+            {
+                <li>@($"{card.Rank} av {card.Suit}")</li>
+            }
+        </ul>
+        <h4>
+            Resultat:
+            @if (Model.Result == Blackjack.Core.Models.GameResult.PlayerWin)
+            {
+                <span>Du vann!</span>
+            }
+            else if (Model.Result == Blackjack.Core.Models.GameResult.DealerWin)
+            {
+                <span>Dealern vann.</span>
+            }
+            else if (Model.Result == Blackjack.Core.Models.GameResult.Push)
+            {
+                <span>Oavgjort!</span>
+            }
+        </h4>
+        <h4>Utbetalning: @Model.Payout kr</h4>
+        <a asp-action="Index">Spela igen</a>
+    }
+}

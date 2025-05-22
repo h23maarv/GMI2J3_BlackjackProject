@@ -3,10 +3,10 @@
 
     public enum Suit
     {
-        Clubs,
-        Diamonds,
-        Hearts,
-        Spades
+        Klöver,
+        Ruter,
+        Hjärter,
+        Spader
     }
 
     public class Card
