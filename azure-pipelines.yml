@@ -1,0 +1,43 @@
+# ASP.NET Core (.NET Framework)
+# Build, test, and deploy ASP.NET Core projects targeting the full .NET Framework.
+
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+# 1️⃣ Installera NuGet
+- task: NuGetToolInstaller@1
+
+# 2️⃣ Återställ beroenden med NuGet
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+# 3️⃣ Bygg applikationen med MSBuild
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)/WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+# 4️⃣ Kör tester med VSTest
+- task: VSTest@2
+  inputs:
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+# 5️⃣ Publicera till Azure App Service
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: '<din-azure-prenumeration>'
+    appName: 'my-razor-app'
+    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
