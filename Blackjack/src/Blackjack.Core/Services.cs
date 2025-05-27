@@ -158,12 +158,26 @@ namespace Blackjack.Core.Services
             var dealerTotal = _handService.CalculateValue(DealerHand);
             System.Diagnostics.Debug.WriteLine($"Player: {playerTotal}, Dealer: {dealerTotal}");
 
-            if (playerTotal > 21) return GameResult.DealerWin;
-            if (dealerTotal > 21) return GameResult.PlayerWin;
-            if (playerTotal > dealerTotal) return GameResult.PlayerWin;
-            if (dealerTotal > playerTotal) return GameResult.DealerWin;
+            if (playerTotal > 21)
+                return GameResult.DealerWin;
+            if (playerTotal == 21)
+                return GameResult.PlayerWin;
+            if (dealerTotal > 21)
+                return GameResult.PlayerWin;
+            if (dealerTotal == 21)
+                return GameResult.DealerWin;
+
+            if (playerTotal > dealerTotal)
+                return GameResult.PlayerWin;
+            if (dealerTotal > playerTotal)
+                return GameResult.DealerWin;
+
+            if (playerTotal > 21 || playerTotal == 21 || dealerTotal > 21 || dealerTotal == 21)
+                IsGameOver = true;
+
             return GameResult.Push;
         }
+        
     }
 
     public class BettingService : IBettingService
