@@ -131,6 +131,14 @@
               "target": "Package",
               "version": "[4.20.72, )"
             },
+            "Selenium.Chrome.WebDriver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.33.0, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
