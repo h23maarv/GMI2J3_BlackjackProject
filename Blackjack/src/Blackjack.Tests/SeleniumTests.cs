@@ -28,7 +28,7 @@ namespace Blackjack.Tests
                 var dealButton = driver.FindElement(By.CssSelector("form[action*='Deal'] button"));
                 dealButton.Click();
                 System.Threading.Thread.Sleep(1200);
-                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
                 var playerValueElement = wait.Until(drv => drv.FindElement(By.Id("playerValue")));
                 var playerValueInt = int.Parse(playerValueElement.Text);
 
@@ -53,57 +53,56 @@ namespace Blackjack.Tests
                 }
 
                 while (true)
+                {
+                    // Kontrollera om resultat visas (då är spelet över)
+                    var resultElements = driver.FindElements(By.XPath(
+                        "//h4[span[contains(text(), 'Du vann!') or contains(text(), 'Dealern vann.') or contains(text(), 'Oavgjort!')]]"));
+                    if (resultElements.Any())
+                        break;
+
+                    if (playerValueInt < 17)
                     {
-                        // Check if the result is displayed.
-                        var resultElements = driver.FindElements(By.XPath(
-                            "//h4[span[contains(text(), 'Du vann!') or contains(text(), 'Dealern vann.') " +
-                            "or contains(text(), 'Oavgjort!')]]"));
-                        if (resultElements.Any())
-                            break;
-
-                        var random = new Random();
-                        bool hit = random.Next(2) == 0;
-
-                        if (hit)
+                        // Tryck på Hit om det är tillåtet
+                        var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
+                        if (hitButtons.Any())
                         {
-                            var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
-                            if (hitButtons.Any())
-                            {
-                                hitButtons.First().Click();
-                                System.Threading.Thread.Sleep(1000);
-                            }
-                            else
-                            {
-                                // No Hit button found, must stand.
-                                var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
-                                if (standButtons.Any())
-                                {
-                                    standButtons.First().Click();
-                                    System.Threading.Thread.Sleep(1000);
-                                }
-                            }
+                            hitButtons.First().Click();
+                            System.Threading.Thread.Sleep(1000);
                         }
                         else
                         {
+                            // Annars får vi stå
                             var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
                             if (standButtons.Any())
                             {
                                 standButtons.First().Click();
                                 System.Threading.Thread.Sleep(1000);
                             }
-                            else
+                        }
+                    }
+                    else
+                    {
+                        // Har vi 17 eller mer, klicka alltid Stand om det går
+                        var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
+                        if (standButtons.Any())
+                        {
+                            standButtons.First().Click();
+                            System.Threading.Thread.Sleep(1000);
+                        }
+                        else
+                        {
+                            // Om stand ej finns, försök hitta Hit för säkerhets skull
+                            var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
+                            if (hitButtons.Any())
                             {
-                                // No stand button.
-                                var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
-                                if (hitButtons.Any())
-                                {
-                                    hitButtons.First().Click();
-                                    System.Threading.Thread.Sleep(1000);
-                                }
+                                hitButtons.First().Click();
+                                System.Threading.Thread.Sleep(1000);
                             }
                         }
-                        System.Threading.Thread.Sleep(1000); // Wait for the game to process the action.
                     }
+
+                    System.Threading.Thread.Sleep(1000); // Vänta in nästa UI-uppdatering
+                }
                 var resultText = driver.FindElement(By.XPath("//h4[span[contains(text(), 'Du vann!') or contains(text(), 'Dealern vann.') " +
                 "or contains(text(), 'Oavgjort!')]]")).Text;
                 Assert.Contains("Resultat: ", resultText);

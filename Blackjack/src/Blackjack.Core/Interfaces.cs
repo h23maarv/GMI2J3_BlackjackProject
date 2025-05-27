@@ -12,7 +12,7 @@ namespace Blackjack.Core.Interfaces
     {
         IList<Card> CreateDeck();
         IList<Card> Shuffle(IList<Card> deck);
-        IList<Card> DrawCard(IList<Card> deck);
+        Card DrawCard(IList<Card> deck);
     }
 
     public interface IRandomProvider

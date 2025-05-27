@@ -301,10 +301,10 @@ C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProj
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Blackjack.Web.props
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Blackjack.Web.props
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\Blackjac.7E225DF0.Up2Date
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\Blackjack.Web.dll
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\refint\Blackjack.Web.dll
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\Blackjack.Web.pdb
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\Blackjack.Web.genruntimeconfig.cache
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\ref\Blackjack.Web.dll
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

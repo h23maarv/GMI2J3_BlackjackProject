@@ -43,7 +43,7 @@ else
         }
     </ul>
 
-    @if (!Model.IsGameOver)
+    @if (!Model.IsGameOver && Model.PlayerHand.Any() && @Model.PlayerHandValue < 21)
     {
         <h3>Dealerns första kort:</h3>
         <ul>

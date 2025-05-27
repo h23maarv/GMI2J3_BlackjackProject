@@ -89,7 +89,11 @@ namespace Blackjack.Tests
                 new Card(Suit.Spader, 6),   // Dealer
                 new Card(Suit.Ruter, 7),    // Player
                 new Card(Suit.Klöver, 2),   // Dealer
-                new Card(Suit.Hjärter, 10), // Dealer nästa kort
+                new Card(Suit.Hjärter, 6), // Dealer nästa kort
+                new Card(Suit.Spader, 5),
+                new Card(Suit.Hjärter, 9),
+                new Card(Suit.Spader, 3),
+                new Card(Suit.Ruter, 8)
             };
             var deckServiceMock = new Mock<IDeckService>();
             deckServiceMock.Setup(d => d.CreateDeck()).Returns(deck);

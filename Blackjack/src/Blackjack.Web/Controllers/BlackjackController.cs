@@ -41,7 +41,7 @@ namespace Blackjack.Web.Controllers
                 PlayerHand = new List<Card>(),
                 DealerHand = new List<Card>(),
                 IsGameOver = false,
-                BetAmount = lastBet, // <-- Lägg till denna rad
+                BetAmount = lastBet,
                 SessionVinst = GetSessionVinst()
             };
             return View(model);
