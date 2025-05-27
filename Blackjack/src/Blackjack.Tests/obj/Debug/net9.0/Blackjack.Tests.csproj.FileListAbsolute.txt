@@ -531,3 +531,7 @@ E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\De
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\macos\selenium-manager
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\windows\selenium-manager.exe
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\WebDriver.dll
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\linux\selenium-manager
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\macos\selenium-manager
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\WebDriver.dll

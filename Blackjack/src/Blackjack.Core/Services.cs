@@ -30,15 +30,15 @@ namespace Blackjack.Core.Services
         {
             _random = random;
         }
-        
-        public Card DrawCard(IList<Card> deck)
+
+        public IList<Card> DrawCard(IList<Card> deck)
         {
             if (deck.Count == 0)
                 throw new InvalidOperationException("Cannot draw from an empty deck");
-        
+
             var card = deck[0];
             deck.RemoveAt(0);
-            return card;
+            return new List<Card> { card }; // Return a list containing the drawn card to match the interface signature
         }
 
         public IList<Card> CreateDeck()
@@ -73,7 +73,7 @@ namespace Blackjack.Core.Services
         {
             return _random.Next(1, 14);
         }
-        
+
         public int CalculateValue(IEnumerable<Card> hand)
         {
             int total = hand.Sum(c => c.Rank > 10 ? 10 : c.Rank);
@@ -125,10 +125,10 @@ namespace Blackjack.Core.Services
             _deck = _deckService.Shuffle(_deckService.CreateDeck());
             PlayerHand.Clear();
             DealerHand.Clear();
-            PlayerHand.Add(_deck[0]);
-            PlayerHand.Add(_deck[1]);
-            DealerHand.Add(_deck[2]);
-            DealerHand.Add(_deck[3]);
+            PlayerHand.Add((Card)_deckService.DrawCard(_deck));
+            PlayerHand.Add((Card)_deckService.DrawCard(_deck));
+            DealerHand.Add((Card)_deckService.DrawCard(_deck));
+            DealerHand.Add((Card)_deckService.DrawCard(_deck));
         }
 
         public void PlayerHit()
@@ -138,9 +138,7 @@ namespace Blackjack.Core.Services
             if (_deck.Count == 0)
                 throw new InvalidOperationException("No more cards in the deck.");
 
-            var card = _deck[0];
-            PlayerHand.Add(card);
-            _deck.RemoveAt(0);
+            PlayerHand.Add((Card)_deckService.DrawCard(_deck));
         }
 
         public void DealerPlay()
@@ -148,8 +146,8 @@ namespace Blackjack.Core.Services
             if (_deck == null || DealerHand == null || PlayerHand == null)
                 throw new InvalidOperationException("Spelet är inte initierat.");
 
-            while (_handService.CalculateValue(DealerHand) < 17)
-                DealerHand.Add(_deck[PlayerHand.Count + DealerHand.Count]);
+            while (_handService.CalculateValue(DealerHand) < 17 && _deck.Count>0)
+                DealerHand.Add((Card)_deckService.DrawCard(_deck));
         }
 
         public GameResult EvaluateOutcome()
@@ -177,7 +175,7 @@ namespace Blackjack.Core.Services
 
             return GameResult.Push;
         }
-        
+
     }
 
     public class BettingService : IBettingService
