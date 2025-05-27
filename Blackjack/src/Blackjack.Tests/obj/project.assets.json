@@ -338,12 +338,6 @@
           }
         }
       },
-      "Selenium.Chrome.WebDriver/2.25.0": {
-        "type": "package",
-        "build": {
-          "build/Selenium.Chrome.WebDriver.targets": {}
-        }
-      },
       "Selenium.WebDriver/4.33.0": {
         "type": "package",
         "compile": {
@@ -857,19 +851,6 @@
         "packageIcon.png"
       ]
     },
-    "Selenium.Chrome.WebDriver/2.25.0": {
-      "sha512": "eYH0QlPve2OqezFWcsNaakor/2DYvvVm5244Ei/VnkYJ0SCmoF/EjpXkuGaapmOvLJBUWKhUez1sbQSHF/J7yA==",
-      "type": "package",
-      "path": "selenium.chrome.webdriver/2.25.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Selenium.Chrome.WebDriver.targets",
-        "driver/chromedriver.exe",
-        "selenium.chrome.webdriver.2.25.0.nupkg.sha512",
-        "selenium.chrome.webdriver.nuspec"
-      ]
-    },
     "Selenium.WebDriver/4.33.0": {
       "sha512": "5dzwA1cMorwYWudX46zyeUqyZn48TZeCHbSERxbpKezGxZ8hMBpcL12XwG4RGUuQKGH8FiEOJOFK4eCE//uNpQ==",
       "type": "package",
@@ -1096,30 +1077,31 @@
       "FluentAssertions >= 8.2.0",
       "Microsoft.NET.Test.Sdk >= 17.13.0",
       "Moq >= 4.20.72",
-      "Selenium.Chrome.WebDriver >= 2.25.0",
       "Selenium.WebDriver >= 4.33.0",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\willi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Klassisk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
+      "projectUniqueName": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
       "projectName": "Blackjack.Tests",
-      "projectPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
-      "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\obj\\",
+      "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
+      "packagesPath": "C:\\Users\\Klassisk\\.nuget\\packages\\",
+      "outputPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Klassisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1134,8 +1116,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
-              "projectPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj"
+            "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
+              "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj"
             }
           }
         }
@@ -1150,7 +1132,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -1167,10 +1149,6 @@
           "Moq": {
             "target": "Package",
             "version": "[4.20.72, )"
-          },
-          "Selenium.Chrome.WebDriver": {
-            "target": "Package",
-            "version": "[2.25.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
@@ -1203,7 +1181,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

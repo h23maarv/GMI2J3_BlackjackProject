@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj": {}
+    "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
+    "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
+        "projectUniqueName": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
         "projectName": "Blackjack.Core",
-        "projectPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
-        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\obj\\",
+        "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
+        "packagesPath": "C:\\Users\\Klassisk\\.nuget\\packages\\",
+        "outputPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Klassisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -65,24 +66,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj": {
+    "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
+        "projectUniqueName": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
         "projectName": "Blackjack.Tests",
-        "projectPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
-        "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\obj\\",
+        "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\Blackjack.Tests.csproj",
+        "packagesPath": "C:\\Users\\Klassisk\\.nuget\\packages\\",
+        "outputPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\willi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Klassisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,8 +99,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
-                "projectPath": "C:\\Users\\willi\\OneDrive\\Dokument\\GitHubDino\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj"
+              "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj": {
+                "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj"
               }
             }
           }
@@ -113,7 +115,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -130,10 +132,6 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.72, )"
-            },
-            "Selenium.Chrome.WebDriver": {
-              "target": "Package",
-              "version": "[2.25.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
@@ -166,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
