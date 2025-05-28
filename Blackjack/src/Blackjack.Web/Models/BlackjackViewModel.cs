@@ -24,6 +24,17 @@ namespace Blackjack.Web.Models
                 return CalculateHandValue(PlayerHand);
             }
         }
+
+        public int DealerHandValue
+        {
+            get
+            {
+                if (DealerHand == null)
+                    return 0;
+                return CalculateHandValue(DealerHand);
+            }
+        }
+
         private int CalculateHandValue(IEnumerable<Card> hand)
         {
             int value = 0;
@@ -31,25 +42,22 @@ namespace Blackjack.Web.Models
 
             foreach (var card in hand)
             {
-                if (card.Rank >= 2 && card.Rank <= 10) // Ess
+                if (card.Rank >= 2 && card.Rank <= 10)
                     value += card.Rank;
-                else if (card.Rank > 10) // Knekt, Dam, Kung
+                else if (card.Rank > 10)
                     value += 10;
-                else if (card.Rank == 1) // Ess
+                else if (card.Rank == 1)
                 {
-                    value += 11; // Räkna ess som 11 först
-                    aces++; // Håll koll på antalet ess
+                    value += 11;
+                    aces++;
                 }
             }
-
-            // Justera värdet för ess om det blir över 21
             while (value > 21 && aces > 0)
             {
-                value -= 10; // Räkna om ess från 11 till 1
+                value -= 10;
                 aces--;
             }
             return value;
         }
-        
     }
 }

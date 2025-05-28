@@ -158,24 +158,26 @@ namespace Blackjack.Core.Services
         {
             var playerTotal = _handService.CalculateValue(PlayerHand);
             var dealerTotal = _handService.CalculateValue(DealerHand);
-            System.Diagnostics.Debug.WriteLine($"Player: {playerTotal}, Dealer: {dealerTotal}");
+
+            // Kolla blackjack på två första korten
+            bool playerBlackjack = PlayerHand.Count == 2 && playerTotal == 21;
+            bool dealerBlackjack = DealerHand.Count == 2 && dealerTotal == 21;
+
+            if (playerBlackjack && dealerBlackjack)
+                return GameResult.Push; // Oavgjort
+            if (playerBlackjack)
+                return GameResult.PlayerWin; // Eller skapa GameResult.Blackjack
+            if (dealerBlackjack)
+                return GameResult.DealerWin;
 
             if (playerTotal > 21)
                 return GameResult.DealerWin;
-            if (playerTotal == 21)
-                return GameResult.PlayerWin;
             if (dealerTotal > 21)
                 return GameResult.PlayerWin;
-            if (dealerTotal == 21)
-                return GameResult.DealerWin;
-
             if (playerTotal > dealerTotal)
                 return GameResult.PlayerWin;
             if (dealerTotal > playerTotal)
                 return GameResult.DealerWin;
-
-            if (playerTotal > 21 || playerTotal == 21 || dealerTotal > 21 || dealerTotal == 21)
-                IsGameOver = true;
 
             return GameResult.Push;
         }

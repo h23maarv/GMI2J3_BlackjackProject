@@ -53,10 +53,38 @@ namespace Blackjack.Web.Controllers
         {
             _bettingService.PlaceBet(bet);
             _gameService.DealInitialHands();
+
+            // Kolla om spelaren fick blackjack
+            var playerHand = _gameService.PlayerHand;
+            var handService = new HandService(new SystemRandomProvider()); // Eller injecta om du kan
+            bool playerBlackjack = playerHand.Count == 2 && handService.CalculateValue(playerHand) == 21;
+
+            if (playerBlackjack)
+            {
+                var result = _gameService.EvaluateOutcome();
+                var payout = _bettingService.Payout(result);
+                decimal vinst = CalculateVinst(result, payout, bet);
+
+                UpdateSessionVinst(vinst);
+
+                var model = new BlackjackViewModel
+                {
+                    PlayerHand = _gameService.PlayerHand,
+                    DealerHand = _gameService.DealerHand,
+                    IsGameOver = true,
+                    Result = result,
+                    BetAmount = bet,
+                    Payout = payout,
+                    SessionVinst = GetSessionVinst()
+                };
+                return View("Index", model); // Visa direkt utan Play
+            }
+
             TempData["BetAmount"] = bet.ToString(System.Globalization.CultureInfo.InvariantCulture);
-            HttpContext.Session.SetString("LastBet", bet.ToString(System.Globalization.CultureInfo.InvariantCulture)); // <--- Lägg till denna rad
+            HttpContext.Session.SetString("LastBet", bet.ToString(System.Globalization.CultureInfo.InvariantCulture));
             return RedirectToAction(nameof(Play));
         }
+
 
         [HttpGet]
         public IActionResult Play()
