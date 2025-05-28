@@ -1,120 +1,137 @@
 ﻿@model Blackjack.Web.Models.BlackjackViewModel
-@{
-    decimal vinst;
-    if (Model.Payout == 0 && Model.Result == Blackjack.Core.Models.GameResult.DealerWin)
-    {
-        vinst = -Model.BetAmount; // Förlorat hela insatsen!
-    }
-    else
-    {
-        vinst = Model.Payout - Model.BetAmount;
-    }
-    var vinstText = vinst > 0 ? $"+{vinst} kr" : vinst < 0 ? $"{vinst} kr" : "0 kr";
-}
 
-<h2>Blackjack</h2>
-<p>Välkommen till Blackjack-projektet!</p>
+<div class="blackjack-table">
 
-@if (Model.PlayerHand == null || !Model.PlayerHand.Any())
-{
-    <form asp-action="Deal" method="post">
-        <label for="bet">Insats:</label>
-        <input type="number" name="bet" min="1" value="@Model.BetAmount" step="1" />
-        <button type="submit">Dela ut kort</button>
-    </form>
-}
-else
-{
-    <h3>Dina kort:</h3>
-    <h4>Summa: <span id="playerValue">@Model.PlayerHandValue</span></h4>
-    <ul>
-        @foreach (var card in Model.PlayerHand)
-        {
-            <li>
-                @{
-                    string rankText = card.Rank == 1 ? "Ess"
-                    : card.Rank == 11 ? "Knekt"
-                    : card.Rank == 12 ? "Dam"
-                    : card.Rank == 13 ? "Kung"
-                    : card.Rank.ToString();
-                }
-                @($"{rankText} av {card.Suit}")
-            </li>
-        }
-    </ul>
+    <h1>ULTRA_BLACKJACK</h1>
 
-    @if (!Model.IsGameOver && Model.PlayerHand.Any() && @Model.PlayerHandValue < 21)
+    @if (Model.PlayerHand == null || !Model.PlayerHand.Any())
     {
-        <h3>Dealerns första kort:</h3>
-        <h4>Summa: <span id="dealerValue">@Model.DealerHandValue</span></h4>
-        <ul>
-            <li>
-                @if (Model.DealerHand != null && Model.DealerHand.Any())
-                {
-                    string rankText = Model.DealerHand.First().Rank switch
-                    {
-                        1 => "Ess",
-                        11 => "Knekt",
-                        12 => "Dam",
-                        13 => "Kung",
-                        _ => Model.DealerHand.First().Rank.ToString()
-                    };
-                    @(rankText + " av " + Model.DealerHand.First().Suit)
-                }
-                else
-                {
-                    <text>Inga kort utdelade än.</text>
-                }
-            </li>
-        </ul>
-        <form asp-action="Hit" method="post">
-            <button type="submit">Ta kort (Hit)</button>
-        </form>
-        <form asp-action="Stand" method="post">
-            <button type="submit">Stanna (Stand)</button>
+        <form asp-action="Deal" method="post" class="controls-row">
+            <label for="bet">Insats:</label>
+            <input type="number" name="bet" class="bet-input" min="1" value="@Model.BetAmount" step="1" />
+            <button type="submit" class="btn">Dela ut kort</button>
         </form>
     }
     else
     {
-        <h3>Dealerns kort:</h3>
-        <h4>Summa: <span id="dealerValue">@Model.DealerHandValue</span></h4>
-        <ul>
-            @foreach (var card in Model.DealerHand)
+        <div class="section-title">Dina kort:</div>
+        <div>Summa: <span id="playerValue">@Model.PlayerHandValue</span></div>
+        <div class="cards-row">
+            @foreach (var card in Model.PlayerHand)
             {
+                var (suitIcon, suitClass) = card.Suit switch
+                {
+                    Blackjack.Core.Models.Suit.Hjärter => ("♥", "red"),
+                    Blackjack.Core.Models.Suit.Ruter => ("♦", "red"),
+                    Blackjack.Core.Models.Suit.Spader => ("♠", "black"),
+                    Blackjack.Core.Models.Suit.Klöver => ("♣", "black"),
+                    _ => ("?", "black")
+                };
                 string rankText = card.Rank switch
                 {
-                    1 => "Ess",
-                    11 => "Knekt",
-                    12 => "Dam",
-                    13 => "Kung",
+                    1 => "A",
+                    11 => "J",
+                    12 => "Q",
+                    13 => "K",
                     _ => card.Rank.ToString()
                 };
-                <li>@(rankText + " av " + card.Suit)</li>
+                <div class="card @suitClass">
+                    <span class="corner-rank">@rankText</span>
+                    <span class="suit">@suitIcon</span>
+                </div>
             }
+        </div>
 
-        </ul>
-        <h4>
-            Resultat:
-            @if (Model.PlayerHand.Count() == 2 && Model.PlayerHandValue == 21)
-            {
-                <span>Du fick blackjack!</span>
-            }
-            else if (Model.Result == Blackjack.Core.Models.GameResult.PlayerWin)
-            {
-                <span>Du vann!</span>
-            }
-            else if (Model.Result == Blackjack.Core.Models.GameResult.DealerWin && Model.Payout == 0)
-            {
-                <span>Dealern vann.</span>
-            }
-            else if (Model.Result == Blackjack.Core.Models.GameResult.Push)
-            {
-                <span>Oavgjort!</span>
-            }
-        </h4>
-        <h4>Utbetalning: @Model.Payout kr</h4>
-        <h4>Din vinst/förlust för handen: @vinstText</h4>
-        <h4>Totalt resultat under sessionen: @(Model.SessionVinst > 0 ? "+" : "")@Model.SessionVinst kr</h4>
-        <a asp-action="Index">Spela igen</a>
+        @if (!Model.IsGameOver && Model.PlayerHand.Any() && @Model.PlayerHandValue < 21)
+        {
+            <div class="section-title">Dealerns första kort:</div>
+            <div>Summa: @(Model.DealerHand.Any() ? Model.DealerHand.First() != null ? Model.DealerHand.First().Rank > 10 ? 10 : Model.DealerHand.First().Rank == 1 ? 11 : Model.DealerHand.First().Rank : 0 : 0)</div>
+            <div class="cards-row">
+                @if (Model.DealerHand != null && Model.DealerHand.Any())
+                {
+                    var firstCard = Model.DealerHand.First();
+                    var (suitIcon, suitClass) = firstCard.Suit switch
+                    {
+                        Blackjack.Core.Models.Suit.Hjärter => ("♥", "red"),
+                        Blackjack.Core.Models.Suit.Ruter => ("♦", "red"),
+                        Blackjack.Core.Models.Suit.Spader => ("♠", "black"),
+                        Blackjack.Core.Models.Suit.Klöver => ("♣", "black"),
+                        _ => ("?", "black")
+                    };
+                    string rankText = firstCard.Rank switch
+                    {
+                        1 => "A",
+                        11 => "J",
+                        12 => "Q",
+                        13 => "K",
+                        _ => firstCard.Rank.ToString()
+                    };
+                    <div class="card @suitClass">
+                        <span class="corner-rank">@rankText</span>
+                        <span class="suit">@suitIcon</span>
+                    </div>
+                }
+            </div>
+            <div class="controls-row">
+                <form asp-action="Hit" method="post"><button type="submit" class="btn">Ta kort (Hit)</button></form>
+                <form asp-action="Stand" method="post"><button type="submit" class="btn">Stanna (Stand)</button></form>
+            </div>
+        }
+        else
+        {
+            <div class="section-title">Dealerns kort:</div>
+            <div>Summa: <span id="dealerValue">@Model.DealerHandValue</span></div>
+            <div class="cards-row">
+                @foreach (var card in Model.DealerHand)
+                {
+                    var (suitIcon, suitClass) = card.Suit switch
+                    {
+                        Blackjack.Core.Models.Suit.Hjärter => ("♥", "red"),
+                        Blackjack.Core.Models.Suit.Ruter => ("♦", "red"),
+                        Blackjack.Core.Models.Suit.Spader => ("♠", "black"),
+                        Blackjack.Core.Models.Suit.Klöver => ("♣", "black"),
+                        _ => ("?", "black")
+                    };
+                    string rankText = card.Rank switch
+                    {
+                        1 => "A",
+                        11 => "J",
+                        12 => "Q",
+                        13 => "K",
+                        _ => card.Rank.ToString()
+                    };
+                    <div class="card @suitClass">
+                        <span class="corner-rank">@rankText</span>
+                        <span class="suit">@suitIcon</span>
+                    </div>
+                }
+            </div>
+            <div class="result-box">
+                <h4>
+                    Resultat:
+                    @if (Model.Result == Blackjack.Core.Models.GameResult.PlayerWin && Model.PlayerHand.Count() == 2 && Model.PlayerHandValue == 21)
+
+                    {
+                        <span>Du fick blackjack!</span>
+                    }
+                    else if (Model.Result == Blackjack.Core.Models.GameResult.PlayerWin)
+                    {
+                        <span>Du vann!</span>
+                    }
+                    else if (Model.Result == Blackjack.Core.Models.GameResult.DealerWin)
+                    {
+                        <span>Dealern vann.</span>
+                    }
+                    else if (Model.Result == Blackjack.Core.Models.GameResult.Push)
+                    {
+                        <span>Oavgjort!</span>
+                    }
+                </h4>
+                <div>Utbetalning: @Model.Payout kr</div>
+                <div>Din vinst/förlust för handen: @(Model.Payout - Model.BetAmount > 0 ? "+" : "")@(Model.Payout - Model.BetAmount) kr</div>
+                <div>Totalt resultat under sessionen: @(Model.SessionVinst > 0 ? "+" : "")@Model.SessionVinst kr</div>
+                <div style="margin-top:12px;"><a asp-action="Index">Spela igen</a></div>
+            </div>
+        }
     }
-}
+</div>
