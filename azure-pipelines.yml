@@ -18,17 +18,17 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-# Kontrollera workloads
+# 🔍 Kontrollera workloads
 - script: dotnet workload list
   displayName: 'Check .NET workloads'
 
-# Restore-steg
+# 🔄 Återställ dependencies
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
 
-# 3️⃣ Bygg applikationen med MSBuild och publicera filer
+# 🏗️ Bygg applikationen med MSBuild
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -37,14 +37,18 @@ steps:
     configuration: '$(buildConfiguration)'
 
 # ✅ Verifiera att WebApp-mappen innehåller filer
-- script: dir "D:\a\1\a\WebApp"
+- script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
   displayName: 'Verifiera att WebApp-mappen innehåller filer'
 
-# 4️⃣ Kör tester med VSTest
-- task: VSTest@2
+# 🚀 Publicera applikationen med dotnet publish (fixar filgenerering)
+- task: DotNetCoreCLI@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'publish'
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp'
+
+# ✅ Dubbelkolla om WebApp-mappen nu har filer
+- script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
+  displayName: 'Verifiera att WebApp-mappen innehåller filer efter publish'
 
 # 🗜️ Skapa en ZIP av den publicerade mappen
 - task: ArchiveFiles@2
@@ -52,10 +56,6 @@ steps:
     rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/WebApp'
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
-
-# ✅ Lista artifact-mappen för att verifiera ZIP-filen
-- script: dir $(Build.ArtifactStagingDirectory)
-  displayName: 'Lista filer i artifact-gruppen'
 
 # 📦 Publicera ZIP-filen som en artifact
 - task: PublishBuildArtifacts@1
