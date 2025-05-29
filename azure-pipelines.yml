@@ -1,6 +1,3 @@
-# ASP.NET Core (.NET Framework)
-# Build, test, and deploy ASP.NET Core projects targeting the full .NET Framework.
-
 trigger:
 - main
 
@@ -21,7 +18,7 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-# Kontroll om workload behöver en update
+# Kontrollera workloads
 - script: dotnet workload list
   displayName: 'Check .NET workloads'
 
@@ -35,7 +32,7 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:PublishProfile=FolderProfile /p:PublishDir="$(build.artifactStagingDirectory)/WebApp"'
+    msbuildArgs: '/p:DeployOnBuild=true /p:PublishProfile=FolderProfile /p:PublishDir="$(Build.ArtifactStagingDirectory)/WebApp"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
@@ -45,20 +42,29 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- script: dir $(Build.ArtifactStagingDirectory)
-  displayName: 'lista filer i artifact-gruppen'
+# 🗜️ Skapa en ZIP av den publicerade mappen
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/WebApp'
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
 
+# ✅ Lista artifact-mappen för att verifiera ZIP-filen
+- script: dir $(Build.ArtifactStagingDirectory)
+  displayName: 'Lista filer i artifact-gruppen'
+
+# 📦 Publicera ZIP-filen som en artifact
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+    pathToPublish: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
     artifactName: 'drop'
     publishLocation: 'Container'
 
-# 5️⃣ Publicera till Azure App Service
+# 🚀 Deploya ZIP-filen till Azure Web App
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'webApp'
     appType: 'webApp'
     WebAppName: 'BlackJack'
-    package: '$(Pipeline.Workspace)/drop/WebApp.zip'
+    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
