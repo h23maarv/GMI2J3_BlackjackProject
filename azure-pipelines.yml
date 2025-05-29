@@ -34,42 +34,38 @@ steps:
     arguments: '--force'
     projects: '**/*.csproj'
 
-# 6️⃣ Bygg applikationen (MSBuild borttaget!)
+# 6️⃣ Bygg applikationen
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     arguments: '--configuration Release'
     projects: '**/*.csproj'
 
-# 7️⃣ Publicera applikationen
+# 🚀 7️⃣ Publicera applikationen direkt till en ZIP-fil
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp /p:TreatWarningsAsErrors=false'
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/BlackJack'
 
-# 8️⃣ Verifiera att WebApp-mappen innehåller filer efter publish
-- script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
-  displayName: 'Verifiera att WebApp-mappen innehåller filer efter publish'
-
-# 🗜️ 9️⃣ Skapa en ZIP av den publicerade mappen
+# 🗜️ 8️⃣ Skapa en ZIP av hela publiceringen
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/WebApp'
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/BlackJack'
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/BlackJack.zip'
 
-# 📦 🔟 Publicera ZIP-filen som en artifact
+# 📦 9️⃣ Publicera ZIP-filen som en artifact
 - task: PublishBuildArtifacts@1
   inputs:
-    pathToPublish: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+    pathToPublish: '$(Build.ArtifactStagingDirectory)/BlackJack.zip'
     artifactName: 'drop'
     publishLocation: 'Container'
 
-# 🚀 1️⃣1️⃣ Deploya ZIP-filen till Azure Web App
+# 🚀 🔟 Deploya ZIP-filen direkt till Azure Web App
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'webApp'
     appType: 'webApp'
     WebAppName: 'BlackJack'
-    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+    package: '$(Build.ArtifactStagingDirectory)/BlackJack.zip'
