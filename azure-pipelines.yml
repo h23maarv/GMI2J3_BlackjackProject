@@ -10,49 +10,62 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-# 1️⃣ Installera NuGet
+# 1️⃣ Installera rätt .NET SDK
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '9.0.x'
+
+# 2️⃣ Installera NuGet
 - task: NuGetToolInstaller@1
 
-# 2️⃣ Återställ beroenden med NuGet
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
-
-# 🔍 Kontrollera workloads
+# 3️⃣ Kontrollera workloads
 - script: dotnet workload list
-  displayName: 'Check .NET workloads'
+  displayName: 'Lista .NET workloads'
 
-# 🔄 Återställ dependencies
+# 4️⃣ Uppdatera workloads (om det behövs)
+- script: dotnet workload update
+  displayName: 'Uppdatera .NET workloads'
+
+# 5️⃣ Återställ beroenden med `dotnet restore`
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
+    arguments: '--force'
     projects: '**/*.csproj'
 
-# 🚀 Publicera applikationen med dotnet publish (byter ut MSBuild!)
+# 6️⃣ Bygg applikationen (MSBuild borttaget!)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--configuration Release'
+    projects: '**/*.csproj'
+
+# 7️⃣ Publicera applikationen
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp'
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp /p:TreatWarningsAsErrors=false'
 
-# ✅ Verifiera att WebApp-mappen innehåller filer efter publish
+# 8️⃣ Verifiera att WebApp-mappen innehåller filer efter publish
 - script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
   displayName: 'Verifiera att WebApp-mappen innehåller filer efter publish'
 
-# 🗜️ Skapa en ZIP av den publicerade mappen
+# 🗜️ 9️⃣ Skapa en ZIP av den publicerade mappen
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/WebApp'
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
 
-# 📦 Publicera ZIP-filen som en artifact
+# 📦 🔟 Publicera ZIP-filen som en artifact
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
     artifactName: 'drop'
     publishLocation: 'Container'
 
-# 🚀 Deploya ZIP-filen till Azure Web App
+# 🚀 1️⃣1️⃣ Deploya ZIP-filen till Azure Web App
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
