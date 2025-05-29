@@ -37,7 +37,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 # ✅ Verifiera att WebApp-mappen innehåller filer
-- script: dir $(Build.ArtifactStagingDirectory)/WebApp
+- script: dir "D:\a\1\a\WebApp"
   displayName: 'Verifiera att WebApp-mappen innehåller filer'
 
 # 4️⃣ Kör tester med VSTest
