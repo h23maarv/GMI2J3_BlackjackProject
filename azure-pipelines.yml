@@ -28,13 +28,17 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-# 3️⃣ Bygg applikationen med MSBuild
+# 3️⃣ Bygg applikationen med MSBuild och publicera filer
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:PublishDir="$(Build.ArtifactStagingDirectory)/WebApp"'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=FileSystem /p:PublishDir="$(Build.ArtifactStagingDirectory)/WebApp"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+# ✅ Verifiera att WebApp-mappen innehåller filer
+- script: dir $(Build.ArtifactStagingDirectory)/WebApp
+  displayName: 'Verifiera att WebApp-mappen innehåller filer'
 
 # 4️⃣ Kör tester med VSTest
 - task: VSTest@2
