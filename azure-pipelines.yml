@@ -28,25 +28,13 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-# 🏗️ Bygg applikationen med MSBuild
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=FileSystem /p:PublishDir="$(Build.ArtifactStagingDirectory)/WebApp"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-# ✅ Verifiera att WebApp-mappen innehåller filer
-- script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
-  displayName: 'Verifiera att WebApp-mappen innehåller filer'
-
-# 🚀 Publicera applikationen med dotnet publish
+# 🚀 Publicera applikationen med dotnet publish (byter ut MSBuild!)
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
     arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp'
 
-# ✅ Dubbelkolla om WebApp-mappen nu har filer
+# ✅ Verifiera att WebApp-mappen innehåller filer efter publish
 - script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
   displayName: 'Verifiera att WebApp-mappen innehåller filer efter publish'
 
