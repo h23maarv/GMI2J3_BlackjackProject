@@ -40,7 +40,7 @@ steps:
 - script: dir "$(Build.ArtifactStagingDirectory)/WebApp"
   displayName: 'Verifiera att WebApp-mappen innehåller filer'
 
-# 🚀 Publicera applikationen med dotnet publish (fixar filgenerering)
+# 🚀 Publicera applikationen med dotnet publish
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
