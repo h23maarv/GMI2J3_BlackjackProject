@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|e:\\softwaretesting1\\gmi2j3_blackjackproject\\blackjack\\src\\blackjack.tests\\gameservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\gameservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|e:\\softwaretesting1\\gmi2j3_blackjackproject\\blackjack\\src\\blackjack.core\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|solutionrelative:src\\blackjack.core\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|e:\\softwaretesting1\\gmi2j3_blackjackproject\\blackjack\\src\\blackjack.core\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{168423CE-06DF-44A2-A9FA-96F04EE6E717}|src\\Blackjack.Core\\Blackjack.Core.csproj|solutionrelative:src\\blackjack.core\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|e:\\softwaretesting1\\gmi2j3_blackjackproject\\blackjack\\src\\blackjack.tests\\seleniumtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D921660-E107-449C-81DA-30BCC29FFABF}|src\\Blackjack.Tests\\Blackjack.Tests.csproj|solutionrelative:src\\blackjack.tests\\seleniumtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,19 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeleniumTests.cs",
-              "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\SeleniumTests.cs",
-              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\SeleniumTests.cs",
-              "ToolTip": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\SeleniumTests.cs",
-              "RelativeToolTip": "src\\Blackjack.Tests\\SeleniumTests.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAgwHEAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Interfaces.cs",
+              "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Interfaces.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Core\\Interfaces.cs",
+              "ToolTip": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Interfaces.cs",
+              "RelativeToolTip": "src\\Blackjack.Core\\Interfaces.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T08:00:23.324Z",
+              "WhenOpened": "2025-05-29T08:21:28.201Z",
               "EditorCaption": ""
             },
             {
@@ -79,7 +91,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Services.cs",
+              "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Services.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Core\\Services.cs",
+              "ToolTip": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Services.cs",
+              "RelativeToolTip": "src\\Blackjack.Core\\Services.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAArwGkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:22:04.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameServiceTests.cs",
+              "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\GameServiceTests.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\GameServiceTests.cs",
+              "ToolTip": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\GameServiceTests.cs",
+              "RelativeToolTip": "src\\Blackjack.Tests\\GameServiceTests.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAArwEYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:19:34.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeleniumTests.cs",
+              "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\SeleniumTests.cs",
+              "RelativeDocumentMoniker": "src\\Blackjack.Tests\\SeleniumTests.cs",
+              "ToolTip": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Tests\\SeleniumTests.cs",
+              "RelativeToolTip": "src\\Blackjack.Tests\\SeleniumTests.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAgwHEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:00:23.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "src\\Blackjack.Web\\Views\\Shared\\_Layout.cshtml",
@@ -87,12 +138,11 @@
               "RelativeToolTip": "src\\Blackjack.Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T09:45:23.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T09:45:23.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Blackjack.css",
               "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css",
               "RelativeDocumentMoniker": "src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css",
@@ -104,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Web\\Views\\Blackjack\\Index.cshtml",
               "RelativeDocumentMoniker": "src\\Blackjack.Web\\Views\\Blackjack\\Index.cshtml",

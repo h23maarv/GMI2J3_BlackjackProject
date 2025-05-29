@@ -100,6 +100,8 @@ namespace Blackjack.Core.Services
         public bool IsGameOver { get; private set; }
         public void Stand()
         {
+            if (_deck == null)
+                throw new InvalidOperationException("Deck has not been initialized. Call DealInitialHands first.");
             IsGameOver = true;
             DealerPlay();
         }
@@ -133,21 +135,27 @@ namespace Blackjack.Core.Services
 
         public void PlayerHit()
         {
-            if (_deck == null || _deck.Count <= PlayerHand.Count + DealerHand.Count)
+            if (_deck == null)
+            {
+                throw new InvalidOperationException("Deck has not been initialized. Call DealInitialHands first.");
+            }
+            if (_deck == null || _deck.Count == 0)
                 throw new InvalidOperationException("No more cards in the deck.");
-
-            var card = _deck[PlayerHand.Count + DealerHand.Count];
+            var card = _deckService.DrawCard(_deck);
             PlayerHand.Add(card);
         }
 
         public void DealerPlay()
         {
+            if (_deck == null)
+            {
+                throw new InvalidOperationException("Deck has not been initialized. Call DealInitialHands first.");
+            }
             while (_handService.CalculateValue(DealerHand) < 17)
             {
-                int nextIndex = PlayerHand.Count + DealerHand.Count;
-                if (_deck == null || nextIndex >= _deck.Count)
+                if (_deck == null || _deck.Count == 0)
                     throw new InvalidOperationException("No more cards in the deck.");
-                var card = _deck[nextIndex];
+                var card = _deckService.DrawCard(_deck);
                 if (card == null) throw new InvalidOperationException("Card is null.");
                 DealerHand.Add(card);
             }
@@ -163,17 +171,27 @@ namespace Blackjack.Core.Services
             bool playerBlackjack = PlayerHand.Count == 2 && playerTotal == 21;
             bool dealerBlackjack = DealerHand.Count == 2 && dealerTotal == 21;
 
+            // 1. Båda har Blackjack: Push
             if (playerBlackjack && dealerBlackjack)
                 return GameResult.Push; // Oavgjort
+
+            // 2. Endast spelaren har Blackjack: Spelaren vinner
             if (playerBlackjack)
                 return GameResult.PlayerWin; // Eller skapa GameResult.Blackjack
+
+            // 3. Dealern har Blackjack: Dealern vinner
             if (dealerBlackjack)
                 return GameResult.DealerWin;
 
+            // 4. Spelare bust: Dealern vinner
             if (playerTotal > 21)
                 return GameResult.DealerWin;
+
+            // 5. Dealer bust: Spelaren vinner
             if (dealerTotal > 21)
                 return GameResult.PlayerWin;
+
+            // 6. Högsta hand vinner, annars push
             if (playerTotal > dealerTotal)
                 return GameResult.PlayerWin;
             if (dealerTotal > playerTotal)
