@@ -45,6 +45,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- script: dir $(Build.ArtifactStagingDirectory)
+  displayName: 'lista filer i artifact-gruppen'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+    artifactName: 'drop'
+    publishLocation: 'Container'
+
 # 5️⃣ Publicera till Azure App Service
 - task: AzureRmWebAppDeployment@4
   inputs:
@@ -52,4 +61,4 @@ steps:
     azureSubscription: 'webApp'
     appType: 'webApp'
     WebAppName: 'BlackJack'
-    package: '$(Build.ArtifactStagingDirectory)/WebApp.zip'
+    package: '$(Pipeline.Workspace)/drop/WebApp.zip'
