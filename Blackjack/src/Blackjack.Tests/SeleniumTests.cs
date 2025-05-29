@@ -32,25 +32,31 @@ namespace Blackjack.Tests
                 var playerValueElement = wait.Until(drv => drv.FindElement(By.Id("playerValue")));
                 var playerValueInt = int.Parse(playerValueElement.Text);
 
-                if (playerValueInt < 21)
+                if (playerValueInt < 17 && playerValueInt < 21)
                 {
                     var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
                     if (hitButtons.Any())
                     {
                         hitButtons.First().Click();
                         System.Threading.Thread.Sleep(1000);
+                        playerValueElement = wait.Until(drv => drv.FindElement(By.Id("playerValue")));
+                        playerValueInt = int.Parse(playerValueElement.Text);
                     }
-                    else
+
+                }
+
+                if (playerValueInt >= 17 || playerValueInt == 21)
+                {
+                    // No Hit button found, must stand.
+                    var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
+                    if (standButtons.Any())
                     {
-                        // No Hit button found, must stand.
-                        var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
-                        if (standButtons.Any())
-                        {
-                            standButtons.First().Click();
-                            System.Threading.Thread.Sleep(1000);
-                        }
+                        standButtons.First().Click();
+                        System.Threading.Thread.Sleep(1000);
                     }
                 }
+
+
 
                 while (true)
                 {
@@ -60,7 +66,10 @@ namespace Blackjack.Tests
                     if (resultElements.Any())
                         break;
 
-                    if (playerValueInt < 17)
+                    var playerValueElementLoop = driver.FindElement(By.Id("playerValue"));
+                    playerValueInt = int.Parse(playerValueElementLoop.Text);
+
+                    if (playerValueInt < 17 && playerValueInt < 21)
                     {
                         // Tryck på Hit om det är tillåtet
                         var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
@@ -68,19 +77,11 @@ namespace Blackjack.Tests
                         {
                             hitButtons.First().Click();
                             System.Threading.Thread.Sleep(1000);
-                        }
-                        else
-                        {
-                            // Annars får vi stå
-                            var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
-                            if (standButtons.Any())
-                            {
-                                standButtons.First().Click();
-                                System.Threading.Thread.Sleep(1000);
-                            }
+                            continue;
                         }
                     }
-                    else
+
+                    if (playerValueInt >= 17 || playerValueInt == 21)
                     {
                         // Har vi 17 eller mer, klicka alltid Stand om det går
                         var standButtons = driver.FindElements(By.CssSelector("form[action*='Stand'] button"));
@@ -91,20 +92,24 @@ namespace Blackjack.Tests
                         }
                         else
                         {
-                            // Om stand ej finns, försök hitta Hit för säkerhets skull
-                            var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
-                            if (hitButtons.Any())
+                            if (playerValueInt < 21)
                             {
-                                hitButtons.First().Click();
-                                System.Threading.Thread.Sleep(1000);
+                                // Om stand ej finns, försök hitta Hit för säkerhets skull
+                                var hitButtons = driver.FindElements(By.CssSelector("form[action*='Hit'] button"));
+                                if (hitButtons.Any())
+                                {
+                                    hitButtons.First().Click();
+                                    System.Threading.Thread.Sleep(1000);
+                                }
                             }
                         }
                     }
-
                     System.Threading.Thread.Sleep(1000); // Vänta in nästa UI-uppdatering
                 }
-                var resultText = driver.FindElement(By.XPath("//h4[span[contains(text(), 'Du vann!') or contains(text(), 'Dealern vann.') " +
-                "or contains(text(), 'Oavgjort!')]]")).Text;
+
+                var resultText = driver.FindElement(By.XPath(
+                    "//h4[span[contains(text(), 'Du vann!') or contains(text(), 'Dealern vann.') " +
+                    "or contains(text(), 'Oavgjort!')]]")).Text;
                 Assert.Contains("Resultat: ", resultText);
                 System.Threading.Thread.Sleep(1000);
 
