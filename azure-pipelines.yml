@@ -21,11 +21,21 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+# Kontroll om workload behöver en update
+- script: dotnet workload list
+  displayName: 'Check .NET workloads'
+
+# Restore-steg
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
+
 # Separat publish-steg
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/WebApp'
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp'
 
 
 # 3️⃣ Bygg applikationen med MSBuild
