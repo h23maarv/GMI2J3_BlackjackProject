@@ -31,13 +31,6 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-# Separat publish-steg
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/WebApp'
-
-
 # 3️⃣ Bygg applikationen med MSBuild
 - task: VSBuild@1
   inputs:
