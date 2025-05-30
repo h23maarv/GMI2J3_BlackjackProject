@@ -27,6 +27,10 @@ steps:
 - script: dotnet workload update
   displayName: 'Uppdatera .NET workloads'
 
+# Dotnet Clean
+- script: dotnet clean
+  displayName: 'Rensa projekt innan build.'
+
 # 5️⃣ Återställ beroenden med `dotnet restore`
 - task: DotNetCoreCLI@2
   inputs:
