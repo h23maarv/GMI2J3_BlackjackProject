@@ -5,71 +5,47 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  outputDir: '$(Build.ArtifactStagingDirectory)/publish'
 
 steps:
-# 1️⃣ Installera rätt .NET SDK
+# 📦 Installera .NET 9 SDK
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
     version: '9.0.x'
 
-# 2️⃣ Installera NuGet
-- task: NuGetToolInstaller@1
-
-# 3️⃣ Kontrollera workloads
-- script: dotnet workload list
-  displayName: 'Lista .NET workloads'
-
-# 4️⃣ Uppdatera workloads (om det behövs)
-- script: dotnet workload update
-  displayName: 'Uppdatera .NET workloads'
-
-# Dotnet Clean
-- script: dotnet clean
-  displayName: 'Rensa projekt innan build.'
-
-# 5️⃣ Återställ beroenden med `dotnet restore`
+# 🔧 Återställ dependencies
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    arguments: '--force'
     projects: '**/*.csproj'
 
-# 6️⃣ Bygg applikationen
+# 🛠 Bygg lösningen
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    arguments: '--configuration Release'
+    arguments: '--configuration $(buildConfiguration)'
     projects: '**/*.csproj'
 
-# 🚀 7️⃣ Publicera applikationen direkt till en ZIP-fil
+# 🚀 Publicera web-applikationen
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/BlackJack'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(outputDir)'
 
-# 🗜️ 8️⃣ Skapa en ZIP av hela publiceringen
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/BlackJack'
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/BlackJack.zip'
-
-# 📦 9️⃣ Publicera ZIP-filen som en artifact
+# 📦 Publicera som artifact
 - task: PublishBuildArtifacts@1
   inputs:
-    pathToPublish: '$(Build.ArtifactStagingDirectory)/BlackJack.zip'
+    pathToPublish: '$(outputDir)'
     artifactName: 'drop'
     publishLocation: 'Container'
 
-# 🚀 🔟 Deploya ZIP-filen direkt till Azure Web App
-- task: AzureRmWebAppDeployment@4
+# 🌐 Deploya till Azure Web App
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'webApp'
-    appType: 'webApp'
-    WebAppName: 'BlackJack'
-    package: '$(Build.ArtifactStagingDirectory)/BlackJack.zip'
+    appType: webApp
+    appName: 'BlackJack'
+    package: '$(outputDir)'
