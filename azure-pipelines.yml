@@ -9,26 +9,29 @@ variables:
   outputDir: '$(Build.ArtifactStagingDirectory)/publish'
 
 steps:
-# 📦 Installera .NET 9 SDK
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
     version: '9.0.x'
 
-# 🔧 Återställ dependencies
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
 
-# 📦 Publicera som artifact
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(outputDir)'
+    zipAfterPublish: false
+
 - task: PublishBuildArtifacts@1
   inputs:
     pathToPublish: '$(outputDir)'
     artifactName: 'drop'
     publishLocation: 'Container'
 
-# 🌐 Deploya till Azure Web App
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'webApp'
