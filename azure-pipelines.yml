@@ -26,7 +26,7 @@ steps:
     publishWebProjects: false
     projects: '**/Blackjack.Web.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(outputDir)'
-    zipAfterPublish: false
+    zipAfterPublish: true
 
 
 - task: PublishBuildArtifacts@1
@@ -40,4 +40,5 @@ steps:
     azureSubscription: 'webApp'
     appType: webApp
     appName: 'BlackJack'
-    package: '$(outputDir)'
+    package: '$(outputDir)/**/*.zip'
+
