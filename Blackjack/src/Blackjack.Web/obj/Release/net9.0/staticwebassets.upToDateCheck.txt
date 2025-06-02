@@ -8,6 +8,7 @@ C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProj
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\css\Blackjack.css
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\jquery-validation\LICENSE.md
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
@@ -60,6 +61,7 @@ C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProj
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\css\Blackjack.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js

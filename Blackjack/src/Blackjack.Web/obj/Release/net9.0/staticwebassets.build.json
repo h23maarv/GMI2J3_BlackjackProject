@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FQTQloX8yRI4XzxZXQn1UqzIebY01sSnb769jIa2tb4=",
+  "Hash": "8nedFjWrmFXMXN3fVITmamfsg1Sgib8hD+D7z+wisMw=",
   "Source": "Blackjack.Web",
   "BasePath": "_content/Blackjack.Web",
   "Mode": "Default",
@@ -225,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Identity": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\6lq3cacq9i-3s8aiqujzj.gz",
+      "SourceId": "Blackjack.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/Blackjack.Web",
+      "RelativePath": "css/Blackjack#[.{fingerprint=3s8aiqujzj}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "hkpgeggqtb",
+      "Integrity": "cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css"
     },
     {
       "Identity": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\6z96rr8ynh-x0q3zqp4vz.gz",
@@ -1401,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\Blackjack.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css",
+      "SourceId": "Blackjack.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\",
+      "BasePath": "_content/Blackjack.Web",
+      "RelativePath": "css/Blackjack#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3s8aiqujzj",
+      "Integrity": "DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Blackjack.css"
     },
     {
       "Identity": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\site.css",
@@ -3320,6 +3362,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-0ZHb7NgcJLNowqFT8mzlfwcKHrkqxxSNHmuYshQMpxk="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css",
+      "AssetFile": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\6lq3cacq9i-3s8aiqujzj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001307189542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css",
+      "AssetFile": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css.gz",
+      "AssetFile": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\6lq3cacq9i-3s8aiqujzj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css",
+      "AssetFile": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\6lq3cacq9i-3s8aiqujzj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001307189542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css",
+      "AssetFile": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\wwwroot\\css\\Blackjack.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css.gz",
+      "AssetFile": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Web\\obj\\Release\\net9.0\\compressed\\6lq3cacq9i-3s8aiqujzj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E="
         }
       ]
     },

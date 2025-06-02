@@ -1,0 +1,112 @@
+﻿body, html {
+    background: #154734;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.blackjack-table {
+    margin: 32px auto;
+    background: radial-gradient(ellipse at center, #308d46 0%, #154734 100%);
+    border-radius: 40px;
+    max-width: 700px;
+    box-shadow: 0 10px 32px #0009;
+    padding: 32px 32px 48px 32px;
+}
+
+.section-title {
+    font-size: 2.1rem;
+    margin-bottom: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.cards-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: #fff;
+    color: #222;
+    border-radius: 10px;
+    width: 62px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 3px 10px #0005;
+    font-size: 1.1rem;
+    padding: 7px 9px 7px 11px;
+    position: relative;
+}
+
+    .card .suit {
+        font-size: 1.6rem;
+        margin-top: 0.2em;
+    }
+
+    .card.red {
+        color: #C62828;
+    }
+
+    .card.black {
+        color: #222;
+    }
+
+    .card .corner-rank {
+        font-weight: 700;
+    }
+
+.controls-row {
+    margin: 18px 0;
+    display: flex;
+    gap: 14px;
+}
+
+.btn {
+    background: #ffd600;
+    color: #111;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 1.12rem;
+    box-shadow: 0 1px 5px #0004;
+    cursor: pointer;
+    transition: background 0.12s;
+}
+
+    .btn:hover {
+        background: #ffc400;
+    }
+
+.bet-input {
+    background: #fff;
+    color: #222;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 1rem;
+    padding: 5px 10px;
+    width: 80px;
+    margin-left: 12px;
+}
+
+.result-box {
+    margin-top: 25px;
+    background: #222b;
+    padding: 18px 16px 12px 16px;
+    border-radius: 14px;
+    font-size: 1.15rem;
+}
+
+a, a:visited {
+    color: #ffd600;
+}
+
+    a:hover {
+        color: #fff200;
+    }

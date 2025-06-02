@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-T70XHQKZuagumDGkrSi0eDatEWfVnrQQbFsEkFA6jGI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2262"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022T70XHQKZuagumDGkrSi0eDatEWfVnrQQbFsEkFA6jGI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 22 May 2025 12:45:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Blackjack.Web/css/Blackjack.3s8aiqujzj.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Blackjack.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3s8aiqujzj"},{"Name":"integrity","Value":"sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="},{"Name":"label","Value":"_content/Blackjack.Web/css/Blackjack.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2045"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 28 May 2025 09:27:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Blackjack.Web/css/Blackjack.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Blackjack.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2045"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 28 May 2025 09:27:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Blackjack.Web/css/site.b9sayid5wm.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

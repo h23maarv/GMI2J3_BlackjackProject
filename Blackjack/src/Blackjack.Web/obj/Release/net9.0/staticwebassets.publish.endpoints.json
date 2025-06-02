@@ -517,6 +517,520 @@
       ]
     },
     {
+      "Route": "css/Blackjack.3s8aiqujzj.css",
+      "AssetFile": "css/Blackjack.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001307189542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css",
+      "AssetFile": "css/Blackjack.css.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001633986928"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XTmRY+ilv0Aukpx32lNAIBmkso+uqX0gVnL1w/gXSRE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css",
+      "AssetFile": "css/Blackjack.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css.br",
+      "AssetFile": "css/Blackjack.css.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XTmRY+ilv0Aukpx32lNAIBmkso+uqX0gVnL1w/gXSRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XTmRY+ilv0Aukpx32lNAIBmkso+uqX0gVnL1w/gXSRE="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css.br"
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.3s8aiqujzj.css.gz",
+      "AssetFile": "css/Blackjack.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3s8aiqujzj"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Blackjack.css.gz"
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css",
+      "AssetFile": "css/Blackjack.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001307189542"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css",
+      "AssetFile": "css/Blackjack.css.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001633986928"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XTmRY+ilv0Aukpx32lNAIBmkso+uqX0gVnL1w/gXSRE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css",
+      "AssetFile": "css/Blackjack.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DRtFpEkVozaJyWz867O8fkwIPFTWcfyGSxIB5wYlePU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css.br",
+      "AssetFile": "css/Blackjack.css.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XTmRY+ilv0Aukpx32lNAIBmkso+uqX0gVnL1w/gXSRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XTmRY+ilv0Aukpx32lNAIBmkso+uqX0gVnL1w/gXSRE="
+        }
+      ]
+    },
+    {
+      "Route": "css/Blackjack.css.gz",
+      "AssetFile": "css/Blackjack.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:27:44 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cXNJkoX22YMH+kt+8CNiznFIF0uzwMGGhV499Ty205E="
+        }
+      ]
+    },
+    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "css/site.css.br",
       "Selectors": [
