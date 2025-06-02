@@ -21,13 +21,6 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-# 🚀 Publicera web-applikationen
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    publishWebProjects: true
-    arguments: '--configuration $(buildConfiguration) --output $(outputDir)'
-
 # 📦 Publicera som artifact
 - task: PublishBuildArtifacts@1
   inputs:
