@@ -21,13 +21,6 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-# 🛠 Bygg lösningen
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    arguments: '--configuration $(buildConfiguration)'
-    projects: '**/*.csproj'
-
 # 🚀 Publicera web-applikationen
 - task: DotNetCoreCLI@2
   inputs:
