@@ -1,21 +1,24 @@
-# Exempel på testfall
+# Övergripande teststrategi
 
-## Automatiska tester (xUnit/Moq)
+- Vi har använt **Test-Driven Development (TDD)** så långt som möjligt, det vill säga skrivit tester före implementation.
+- Alla kärnkomponenter är utvecklade med enhetstester (**xUnit**).
+- **Mocking** (Moq) används för beroenden, särskilt i `GameService` och `DeckService`.
+- UI testas både **manuellt** och med **Selenium WebDriver** för att automatisera användarflöden.
+- En **CI-pipeline** (Azure DevOps) är byggd och kör automatiskt alla tester vid varje push till GitHub.
+- Kodtäckning har mätts periodvis (ange procent om ni vill, annars utelämna).
+- Buggfixar och förbättringar har hanterats genom **issues** och **pull requests**.
 
-| Testnamn                                              | Syfte                                                 | Förväntat resultat                |
-|-------------------------------------------------------|-------------------------------------------------------|-----------------------------------|
-| DealInitialHands_GivesTwoCardsToPlayerAndDealer       | Kontrollera att två kort ges till spelare och dealer  | Båda får 2 kort                   |
-| PlayerHit_AddsCardToPlayerHand                        | Kontrollera att spelaren får ett kort till            | Spelarens hand ökar med ett kort  |
-| DealerPlay_StopsWhenDealerReaches17OrMore             | Kontroll att dealern drar tills minst 17              | Dealerhandens värde ≥ 17          |
-| EvaluateOutcome_PlayerGetsBlackjack_ReturnsPlayerWin  | Kontroll av vinst på blackjack                        | Resultat: PlayerWin               |
-| EvaluateOutcome_Push_ReturnsPush                      | Testa oavgjort när båda har lika hand                 | Resultat: Push                    |
+## Testnivåer
 
-## UI/Selenium
+- **Unit testing**: Alla logikklasser (`DeckService`, `HandService`, `GameService`, `BettingService`)
+- **Integration testing**: Tester där flera tjänster samverkar, t.ex. `GameService` + `HandService`.
+- **UI/acceptanstest**: Manuella tester samt Seleniumtest för hela spelrundor.
+- **Regressionstestning**: Automatiska tester körs vid varje commit i pipelinen.
 
-| Steg                                        | Syfte                              | Förväntat resultat                     |
-|---------------------------------------------|------------------------------------|----------------------------------------|
-| Starta spel, fyll i insats, klicka "Deal"   | Simulera start                     | Två kort visas, dealer visar ett kort  |
-| Klicka "Hit" tills > 21                     | Testa bust                         | Resultat: "Dealern vann"               |
-| Spela en runda där du får blackjack         | Testa blackjack                    | Resultat: "Du fick blackjack"          |
-| Klicka "Stanna" efter några kort            | Testa stand                        | Resultat visas                         |
-| Klicka "Spela igen"                         | Ny runda startar                   | Nya kort delas ut                      |
+## Verktyg
+
+- **xUnit** för enhetstestning
+- **Moq** för mocking av beroenden
+- **Selenium WebDriver** för automatiska UI-tester
+- **Azure DevOps** för CI/CD
+- **GitHub** för versionshantering
