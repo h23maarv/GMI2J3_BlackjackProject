@@ -19,12 +19,11 @@ steps:
     command: 'restore'
     projects: '**/*Web.csproj'
 
-# 🔹 Bygg testprojektet
 - task: DotNetCoreCLI@2
   displayName: 'Build Test Project'
   inputs:
     command: 'build'
-    projects: 'src/Blackjack.Tests/Blackjack.Tests.csproj'
+    projects: '**/Blackjack.Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
 # 🔹 Kör tester med kodtäckning
