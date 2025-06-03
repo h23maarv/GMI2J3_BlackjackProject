@@ -31,7 +31,7 @@ steps:
   displayName: 'Run Unit Tests and Publish Results'
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: 'src/Blackjack.Tests/bin/**/*.dll'
+    testAssemblyVer2: 'src/Blackjack.Tests/bin/Debug/net9.0/**/*.dll'
     searchFolder: '$(Build.SourcesDirectory)'
 
 - task: DotNetCoreCLI@2
