@@ -23,7 +23,7 @@ steps:
   displayName: 'Build Test Project'
   inputs:
     command: 'build'
-    projects: 'src/Blackjack.Tests/Blackjack.Tests.csproj'
+    projects: '**/Blackjack.Tests.csproj'
     arguments: '--configuration Release'
 
 # 🔹 Kör tester med kodtäckning
