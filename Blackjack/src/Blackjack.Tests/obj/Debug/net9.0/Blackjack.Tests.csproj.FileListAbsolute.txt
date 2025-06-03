@@ -108,7 +108,6 @@ E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/De
 E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/testhost.exe
 E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/testhost.dll
 E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/xunit.abstractions.dll
-E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/xunit.runner.visualstudio.testadapter.dll
 E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/Blackjack.Tests.deps.json
 E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/Blackjack.Tests.runtimeconfig.json
 E:/SoftwareTesting1/GMI2J3_BlackjackProject/Blackjack/src/Blackjack.Tests/bin/Debug/net9.0/Blackjack.Tests.dll
@@ -319,7 +318,6 @@ E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\De
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\testhost.exe
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\testhost.dll
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\xunit.abstractions.dll
-E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\xunit.runner.visualstudio.testadapter.dll
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\Blackjack.Tests.deps.json
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\Blackjack.Tests.runtimeconfig.json
 E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\Blackjack.Tests.dll
@@ -535,3 +533,7 @@ C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProj
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\macos\selenium-manager
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\selenium-manager\windows\selenium-manager.exe
 C:\Users\Mattr\Skola\Årskurs 2\GMI2J3 - Software Testing 1\Github\BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\WebDriver.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\xunit.runner.reporters.netcoreapp10.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\xunit.runner.utility.netcoreapp10.dll
+E:\SoftwareTesting1\GMI2J3_BlackjackProject\Blackjack\src\Blackjack.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_Blackjack.Tests

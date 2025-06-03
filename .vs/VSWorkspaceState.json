@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Blackjack",
+    "\\Blackjack\\src",
+    "\\Blackjack\\src\\Blackjack.Tests",
+    "\\Blackjack\\src\\Blackjack.Tests\\TestResults"
   ],
-  "SelectedNode": "\\Blackjack.sln",
+  "SelectedNode": "\\Blackjack\\Blackjack.sln",
   "PreviewInSolutionExplorer": false
 }

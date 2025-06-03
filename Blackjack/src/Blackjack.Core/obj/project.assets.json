@@ -8,23 +8,25 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Mattr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Klassisk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
+      "projectUniqueName": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
       "projectName": "Blackjack.Core",
-      "projectPath": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
-      "packagesPath": "C:\\Users\\Mattr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mattr\\Skola\\Årskurs 2\\GMI2J3 - Software Testing 1\\Github\\BlackjackProject\\Blackjack\\src\\Blackjack.Core\\obj\\",
+      "projectPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\Blackjack.Core.csproj",
+      "packagesPath": "C:\\Users\\Klassisk\\.nuget\\packages\\",
+      "outputPath": "E:\\SoftwareTesting1\\GMI2J3_BlackjackProject\\Blackjack\\src\\Blackjack.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mattr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Klassisk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +35,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -52,7 +53,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -73,7 +74,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

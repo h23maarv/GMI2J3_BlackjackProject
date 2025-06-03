@@ -6,10 +6,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.4">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
 		<PackageReference Include="Selenium.WebDriver" Version="4.33.0" />
 		<PackageReference Include="xunit" Version="2.6.6" />
-		<PackageReference Include="xunit.runner.visualstudio" Version="2.5.5" >
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.5.5">
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		  <PrivateAssets>all</PrivateAssets>
 		</PackageReference>
@@ -20,5 +24,9 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Blackjack.Core\Blackjack.Core.csproj" />
 	</ItemGroup>
+
+	<PropertyGroup>
+		<RunSettingsFile>runsettings.xml</RunSettingsFile>
+	</PropertyGroup>
 
 </Project>
