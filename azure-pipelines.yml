@@ -23,15 +23,15 @@ steps:
   displayName: 'Build Test Project'
   inputs:
     command: 'build'
-    projects: '**/Blackjack.Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
+    projects: 'src/Blackjack.Tests/Blackjack.Tests.csproj'
+    arguments: '--configuration Release'
 
 # 🔹 Kör tester med kodtäckning
 - task: VSTest@2
   displayName: 'Run Unit Tests and Publish Results'
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: 'src/Blackjack.Tests/bin/Debug/net9.0/**/*.dll'
+    testAssemblyVer2: 'src/Blackjack.Tests/bin/Release/net9.0/**/*.dll'
     searchFolder: '$(Build.SourcesDirectory)'
 
 - task: DotNetCoreCLI@2
