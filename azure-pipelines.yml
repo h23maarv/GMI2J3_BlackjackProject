@@ -19,6 +19,14 @@ steps:
     command: 'restore'
     projects: '**/*Web.csproj'
 
+# 🔹 Kör tester och publicera resultaten
+- task: VSTest@2
+  displayName: 'Run Tests and Publish Results'
+  inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: '**/Tests/*.dll'
+    searchFolder: '$(Build.SourcesDirectory)'
+
 - task: DotNetCoreCLI@2
   displayName: 'Publish WebApp'
   inputs:
