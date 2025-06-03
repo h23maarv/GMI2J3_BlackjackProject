@@ -20,10 +20,10 @@ steps:
     projects: '**/*Web.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Build Test Project'
+  displayName: 'Build Solution'
   inputs:
     command: 'build'
-    projects: '**/Blackjack.Tests.csproj'
+    projects: '**/*.sln'
     arguments: '--configuration Release'
 
 # 🔹 Kör tester med kodtäckning
