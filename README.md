@@ -6,6 +6,8 @@ William Ekengren, Mattias Arvidsson & William Ekbladh
 **Länk till Azure DevOps:**  
 [https://dev.azure.com/h23wieke/ULTRA_BLACKJACK_WIN_EVERY_HAND](https://dev.azure.com/h23wieke/ULTRA_BLACKJACK_WIN_EVERY_HAND)
 
+***Bilder till Azure DevOps finns under Wiki***
+
 ---
 
 ## Om projektet
